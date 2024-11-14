@@ -7,9 +7,9 @@ from nextbige_assessment.settings import base
 def main():
     """Run administrative tasks."""
     if base.DEBUG:
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'nextbige_assessment.settings.production')
-    else: 
         os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'nextbige_assessment.settings.local')
+    else: 
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'nextbige_assessment.settings.production')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
