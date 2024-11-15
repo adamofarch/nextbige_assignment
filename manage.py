@@ -2,14 +2,14 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-from nextbige_assessment.settings import base
+from nextbige_assignment.settings import base
 
 def main():
     """Run administrative tasks."""
     if base.DEBUG:
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'nextbige_assessment.settings.local')
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'nextbige_assignment.settings.local')
     else: 
-        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'nextbige_assessment.settings.production')
+        os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'nextbige_assignment.settings.production')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
