@@ -37,7 +37,7 @@ in the assignment guidelines are met and instructions for evaluation and testing
     Note: Arch Linux Users can install Docker with `sudo pacman -S docker` then further start the daemon with `sudo systemctl start docker docker.socket`
 
   - Windows
-    Refer to the documentation **[Here](https://docs.docker.com/desktop/setup/install/windows-install/)** for step by step guide to install docker engine and docker desktop on your system.
+    - Refer to the documentation **[Here](https://docs.docker.com/desktop/setup/install/windows-install/)** for step by step guide to install docker engine and docker desktop on your system.
     
 **Step 2:**: Clone the Repository
   1. ```sh
