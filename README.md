@@ -81,9 +81,10 @@ in the assignment guidelines are met and instructions for evaluation and testing
      pip install -r requirements.txt
 
 **Step 7**: Configure the django settings for the local environment
-  - Look for the following options and replace them to static values, e.g. `DEBUG=True` or create a .env file and reference all of these variables from that file to avoid any runtime errors 
+  - Look for the following options and replace them to static values, e.g. `DEBUG=True` or create a .env file and reference all of these variables from that file to avoid encountering any errors 
     ```text
     DEBUG = os.getenv('DEBUG')
+    
         DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
