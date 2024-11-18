@@ -96,7 +96,7 @@ in the assignment guidelines are met and instructions for evaluation and testing
 
 2. `/api/login/` -- This endpoint as expected of it, logs in the user through the django's default SessionAuthentication using the form-data(username and password) provided in the request, and as it is also a POST request this endpoint is also CSRF validated.
 
-3. `/api/profile` -- This endpoint is protected and requires user's AuthToken which is generated automatically upon registering and can be found or returned with hitting a login request to the application. You can also find the AuthToken in the database, Log into the admin panel to find it manually. To access this endpoint one would need to mention Authorization header in the request headers with the key value as `Token <your_token>`, and not to forget it is a GET request only endpoint.
+3. `/api/profile` -- This endpoint is protected and requires user's AuthToken to authenticate which is generated automatically upon registering and can be found or returned with hitting a login request to the application. You can also find the AuthToken in the database, Log into the admin panel to find it manually. To access this endpoint one would need to mention Authorization header in the request headers with the key value as `Token <your_token>`, and not to forget, it is a GET request only endpoint.
 
 ## Testing Using Pytest 
 
