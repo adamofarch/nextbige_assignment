@@ -79,7 +79,7 @@ in the assignment guidelines are met and instructions for evaluation and testing
 **Step 6**: Install the required Dependencies
   - ```sh
      pip install -r requirements.txt
-     
+       
 **Step 7**: Migrate the changes to the new database
   - ```sh
     python manage.py migrate
