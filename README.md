@@ -120,7 +120,15 @@ in the assignment guidelines are met and instructions for evaluation and testing
 This application includes pytest testcases to verify the functionality of the endpoints listed above. Refer to the code for the detailed insight about the testcases I've written in the directory `/api/tests/` 
 - You may use the command `pytest` inside the container's interactive shell to run the testcases and check the results for the testcases
 
+# Additional Takeaways/Notes
 
+1. The `last_login_ip` field is left editable in order to let it show up in the Admin Panel, but it is not recommended to insert any values into it if creating a user manually through the Django admin panel as it will be replaced by the ip address captured by the `IPAddressMiddleware` at the login after the request life cycle is completed. And the field will be updated and an Ip address will be there next time you hit a login endpoint. 
+
+2. The `phone_number` field implemented uses a django's builtin validator to ensure seamless validation of the phone number entered by the user as input which meets all the conditions of being an Indian originated phone number.
+
+3. `Pytest-django` package is used to write tests which is basically pytest but for better integration with django, you can find all the tests in `tests/` directory inside the app `api/` which is also mentioned in the 
+
+4. After starting the containers, Please run `python manage.py migrate` if there are any migrations available before running the server and create a superuser to access django admin panel. 
 
 
 
