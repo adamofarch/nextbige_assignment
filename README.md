@@ -1,7 +1,7 @@
 # Getting Started 
 
 This repo is the submission of Challenge No. 1/4 mentioned in the Assignment Guidelines and I've done my best to see if all the requirements that were mentioned
-in the assignment guidelines are met and instructions for evaluation and testing are given below in the Usage and Testing section below.
+in the assignment guidelines are met and instructions for evaluation and testing are given below in the [Usage and Testing](https://github.com/adamofarch/nextbige_assignment/blob/main/README.md#usage-and-testing) section below.
 
 # Installation 
 
