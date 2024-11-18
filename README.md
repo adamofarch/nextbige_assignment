@@ -59,7 +59,7 @@ in the assignment guidelines are met and instructions for evaluation and testing
 
 **Step 2**: Setup Postgresql with django Refer to the django docs for detailed instructions **[Here](https://docs.djangoproject.com/en/5.1/ref/databases/#postgresql-notes)**
 
-**Step 3:**: Clone the Repository
+**Step 3**: Clone the Repository
   - ```sh
      git clone https://github.com/adamofarch/nextbige_assignment.git
      cd nextbige_assignment/
