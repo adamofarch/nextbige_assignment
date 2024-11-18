@@ -25,7 +25,8 @@ in the assignment guidelines are met and instructions for evaluation and testing
           sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
         sudo apt-get update
     - `Note: If you use an Ubuntu derivative distribution, such as Linux Mint, you may need to use UBUNTU_CODENAME instead of VERSION_CODENAME`
-       
+
+
     2. Install the Docker Package
        ```sh
        sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
@@ -51,7 +52,6 @@ in the assignment guidelines are met and instructions for evaluation and testing
      
 **Step 4**: Access the application
   - You can test the application either with Postman or just CURL requests at `http://localhost:8000/api/<endpoint>`
-  - **IMPORTANT**: Username and Password for the Admin Panel will be attached with the Email 
 
 ## Method 2: Local Environment 
 
