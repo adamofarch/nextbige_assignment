@@ -19,7 +19,7 @@ class RegisterUser(APIView):
             user.save()
             # token = Token.objects.create(user=user)
             token = Token.objects.get(user=user)
-            return Response({'token': token.key, 'user': serializer.data})
+            return Response({'user': serializer.data})
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class LoginUser(APIView):
@@ -33,7 +33,7 @@ class LoginUser(APIView):
         return Response({'token': token.key, 'user': serializer.data})
 
 class FetchUserProfile(APIView):
-    authentication_classes = [BasicAuthentication, TokenAuthentication]
+    authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
     def get(self, request):
         queryset = get_object_or_404(User, username=request.user.username)
