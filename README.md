@@ -39,7 +39,7 @@ in the assignment guidelines are met and instructions for evaluation and testing
   - **Windows**
     - Refer to the documentation **[Here](https://docs.docker.com/desktop/setup/install/windows-install/)** for step by step guide to install docker engine and docker desktop on your system.
     
-**Step 2:**: Clone the Repository
+**Step 2**: Clone the Repository
   1. ```sh
      git clone https://github.com/adamofarch/nextbige_assignment.git
      cd nextbige_assignment/
