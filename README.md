@@ -8,7 +8,7 @@ in the assignment guidelines are met and instructions for evaluation and testing
 ## Method 1: Using Docker(Recommended)
 
 **Step 1:** Install Docker for your machine:
-  - Linux (Debian based)
+  - **Linux (Debian based)**
     1. Set up Docker's apt repository
        ```sh
         # Add Docker's official GPG key:
@@ -36,7 +36,7 @@ in the assignment guidelines are met and instructions for evaluation and testing
 
     Note: Arch Linux Users can install Docker with `sudo pacman -S docker` then further start the daemon with `sudo systemctl start docker docker.socket`
 
-  - Windows
+  - **Windows**
     - Refer to the documentation **[Here](https://docs.docker.com/desktop/setup/install/windows-install/)** for step by step guide to install docker engine and docker desktop on your system.
     
 **Step 2:**: Clone the Repository
