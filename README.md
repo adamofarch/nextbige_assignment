@@ -34,7 +34,7 @@ in the assignment guidelines are met and instructions for evaluation and testing
        ```sh
        sudo docker run hello-world
 
-    Note: Arch Linux Users can install Docker with `sudo pacman -S docker` then further start the daemon with `sudo systemctl start docker docker.socket`
+    Note: Arch Linux Users can install Docker with `sudo pacman -S docker` or any AUR helper then further start the daemon with `sudo systemctl start docker docker.socket` if not started automatically.
 
   - **Windows**
     - Refer to the documentation **[Here](https://docs.docker.com/desktop/setup/install/windows-install/)** for step by step guide to install docker engine and docker desktop on your system.
