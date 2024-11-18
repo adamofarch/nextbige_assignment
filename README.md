@@ -50,8 +50,8 @@ in the assignment guidelines are met and instructions for evaluation and testing
   Note: `You can find the container details, environment variables for the postgresql in the docker-compose.yml`
      
 **Step 4**: Access the application
-  - You can test the application either with Postman or just CURL requests at http://localhost:8000/api/<endpoint>
-  - **IMPORTANT**: Username and Password for the Admin Panel will be attached with Email 
+  - You can test the application either with Postman or just CURL requests at `http://localhost:8000/api/<endpoint>`
+  - **IMPORTANT**: Username and Password for the Admin Panel will be attached with the Email 
 
 ## Method 2: Local Environment 
 
