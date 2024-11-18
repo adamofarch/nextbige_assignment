@@ -117,7 +117,7 @@ in the assignment guidelines are met and instructions for evaluation and testing
 ## Testing Using Pytest 
 
 This application includes pytest testcases to verify the functionality of the endpoints listed above. Refer to the code for the detailed insight about the testcases I've written in the directory `/api/tests/` 
-- You can use the command `pytest` inside the container's interactive shell to run the testcases and check the results for the testcases
+- You can use the command `pytest -v` inside the application container's interactive shell to run the testcases and check the results for the testcases
 
 # Additional Takeaways/Notes
 
