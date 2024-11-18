@@ -79,12 +79,28 @@ in the assignment guidelines are met and instructions for evaluation and testing
 **Step 6**: Install the required Dependencies
   - ```sh
      pip install -r requirements.txt
+
+**Step 7**: Configure the django settings for the local environment
+  - Look for the following options and replace them to static values, e.g. `DEBUG=True` or create a .env file and reference all of these variables from that file to avoid any runtime errors 
+    ```text
+    DEBUG = os.getenv('DEBUG')
+        DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.getenv('DATABASE_NAME'),
+            'USER': os.getenv('DATABASE_USER'),
+            'PASSWORD': os.getenv('DATABASE_PASSWORD'),
+            'HOST': os.getenv('DATABASE_HOST'),
+            'PORT': os.getenv('DATABASE_PORT'),
+        }
+    }
+
        
-**Step 7**: Migrate the changes to the new database
+**Step 8**: Migrate the changes to the new database
   - ```sh
     python manage.py migrate
 
-**Step 8**: Run the development server
+**Step 9**: Run the development server
   - ```sh
     python manage.py runserver
 
