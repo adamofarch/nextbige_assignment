@@ -3,7 +3,7 @@
 This repo is the submission of Challenge No. 1/4 mentioned in the Assignment Guidelines and I've done my best to see if all the requirements that were mentioned
 in the assignment guidelines are met and instructions for evaluation and testing are given below in the [Usage and Testing](https://github.com/adamofarch/nextbige_assignment/blob/main/README.md#usage-and-testing) section below.
 
-Edit: Overlook the Credentials provided in the email, call it my naive behaviour but I almost forgot that the data won't be persisted, but it's common sense.
+Edit: Overlook the Credentials provided in the email, call it my naive behaviour but I almost forgot that the data won't be persisted, but it's common sense. Follow the Installation guide below to test the application.
 
 # Installation 
 
@@ -145,7 +145,7 @@ This application includes pytest testcases to verify the functionality of the en
 
 3. `Pytest-django` package is used to write tests which is basically pytest but for better integration with django, you can find all the tests in `tests/` directory inside the app `api/` which is also mentioned in the 
 
-4. After starting the containers, Please run `python manage.py migrate` if there are any migrations available before running the server and create a superuser to access django admin panel. 
+4. After starting the containers, Please run `python manage.py migrate` before running the server and create a superuser to access django admin panel. 
 
 
 
