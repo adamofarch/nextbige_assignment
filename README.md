@@ -51,7 +51,7 @@ in the assignment guidelines are met and instructions for evaluation and testing
 
   2. Access the container's interactive shell to apply the migrations
      ```sh
-     docker exec -it <container_name_here> /bin/sh
+     docker exec -it <application_container_name_here> /bin/sh
 
   3. Apply the migrations
      ```sh
@@ -60,6 +60,10 @@ in the assignment guidelines are met and instructions for evaluation and testing
   4. Create a superuser to access admin panel
      ```sh
      python manage.py createsuperuser
+
+  5. Exit the interactive shell and Restart the containers
+     ```sh
+     docker-compose down && docker-compose up --build 
      
 **Step 4**: Access the application
   - You can test the application either with Postman or just CURL requests at `http://localhost:8000/api/<endpoint>`
