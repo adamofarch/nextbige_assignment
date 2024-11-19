@@ -44,10 +44,22 @@ in the assignment guidelines are met and instructions for evaluation and testing
      git clone https://github.com/adamofarch/nextbige_assignment.git
      cd nextbige_assignment/
 
-**Step 3**: Start the Containers
+**Step 3**: Start the Containers and apply migrations
   1. ```sh
-     docker-compose up --build
+     docker-compose up --build -d
   Note: `You can find the container details, environment variables for the postgresql in the docker-compose.yml`
+
+  2. Access the container's interactive shell to apply the migrations
+     ```sh
+     docker exec -it <container_name_here> /bin/sh
+
+  3. Apply the migrations
+     ```sh
+     python manage.py migrate
+
+  4. Create a superuser to access admin panel
+     ```sh
+     python manage.py createsuperuser
      
 **Step 4**: Access the application
   - You can test the application either with Postman or just CURL requests at `http://localhost:8000/api/<endpoint>`
