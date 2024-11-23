@@ -143,7 +143,7 @@ This application includes pytest testcases to verify the functionality of the en
 
 2. The `phone_number` field implemented uses a django's builtin validator to ensure seamless validation of the phone number entered by the user as input which meets all the conditions of being an Indian originated phone number.
 
-3. `Pytest-django` package is used to write tests which is basically pytest but for better integration with django, you can find all the tests in `tests/` directory inside the app `api/` which is also mentioned in the 
+3. `Pytest-django` package is used to write tests which is basically pytest but for better integration with django, you can find all the tests in `tests/` directory inside the app `api/` which is also mentioned in the **(Testing Using Pytest)[https://github.com/adamofarch/nextbige_assignment#testing-using-pytest]**
 
 4. After starting the containers, Please run `python manage.py migrate` before running the server and create a superuser to access django admin panel. 
 
